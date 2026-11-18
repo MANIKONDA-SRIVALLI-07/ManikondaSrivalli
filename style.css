@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f6fa;
+    color: #222;
+}
+
+header {
+    background: #171b45;
+    color: white;
+    padding: 18px 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #ffcc70;
+}
+
+.hero {
+    min-height: 400px;
+    background: linear-gradient(120deg, #171b45, #6554c0);
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffb84d;
+    color: #171b45;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #171b45;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.section > p {
+    line-height: 1.7;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-7px);
+}
+
+.event-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.event-card h3 {
+    color: #6554c0;
+    margin-bottom: 12px;
+}
+
+.event-card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+button {
+    background: #6554c0;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover {
+    background: #171b45;
+}
+
+form {
+    background: white;
+    max-width: 550px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    font-size: 16px;
+}
+
+#registrationMessage,
+#volunteerMessage {
+    margin-top: 18px;
+    color: green;
+    font-weight: bold;
+}
+
+.qr-section {
+    background: #e9e7ff;
+}
+
+.qr-placeholder {
+    margin: 25px auto;
+    padding: 35px;
+    width: 180px;
+    background: white;
+    border: 2px dashed #6554c0;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.admin-panel {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.admin-panel h3 {
+    color: #6554c0;
+    margin: 25px 0 15px;
+}
+
+#registrationList,
+#volunteerList {
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+.record {
+    background: #f0efff;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 7px;
+    max-width: 650px;
+}
+
+footer {
+    background: #171b45;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+}
